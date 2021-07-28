@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //최댓값 구하기
+    let result = '10 9 8 7 6 5 4 3 2 1';
+  result = result.split(' ').map(n=>{
+       return parseInt(n, 10);
+    });
+    result.sort((a,b) =>  (b-a));
+
+    console.log(result[0]);
+
+  </script>
+</body>
+</html>

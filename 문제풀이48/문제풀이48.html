@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+  //  대소문자 바꿔서 출력하기
+    let word = 'AAABBBcccddd';
+    let a = '';
+
+    for (var i = 0; i < word.length; i++) {
+       if (word[i] === word[i].toUpperCase()) {
+           a += word[i].toLowerCase();
+           // console.log(a);
+       }else if (word[i] === word[i].toLowerCase()) {
+             a += word[i].toUpperCase();
+             // console.log(a);
+       }
+
+
+    }
+     console.log(a);
+
+
+
+
+  </script>
+
+</body>
+</html>

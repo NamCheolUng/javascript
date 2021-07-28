@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //번호 매기기
+    let students = ['강은지','홍유진','한지호','최성훈','박현서','박지호','김채리','김진이','김유정','김민호','권윤일','강채연'];
+
+    let n = students.sort(); //숫자만 함수사!!!
+    console.log(n);
+
+    for (var i = 0; i < n.length; i++) {
+      console.log(`번호 : ${i+1}, 이름 : ${n[i]}`);
+      document.write('번호 : ',i+1,' ','이름 : ', n[i], '<br>');
+
+    }
+
+
+    // for (var variable in n) {
+    //   console.log(`번호 : ${parseInt(variable)+1}, 이름 : ${n[variable]}`);
+    //
+    //
+    //
+    // }
+
+
+
+
+  </script>
+
+</body>
+</html>

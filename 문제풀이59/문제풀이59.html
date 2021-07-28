@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //빈칸채우기
+  const s = 'hi';
+  // const n = 25 + parseInt((s.length/2), 10);
+
+  //왼쪽 빈칸채우기
+  const left = s.padStart(25, '='); //앞에길이 , 뒤에 채울 문자열
+  console.log(left);
+
+  //오른쪽 채우기
+ const right = left.padEnd(50, '=');
+
+ console.log(right);
+
+
+
+
+  </script>
+
+</body>
+</html>

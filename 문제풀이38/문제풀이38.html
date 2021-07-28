@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //호준이의 아르바이트
+    //97, 86, 75, 66, 55, 97, 85, 97, 97, 95
+
+
+    const scores = ['97', '86', '75', '66', '55', '97', '85', '97', '97', '95'];
+
+
+  scores.sort(function(a,b){
+    return a-b;
+  });
+
+  let top3 = [];
+  let count = 0;
+
+  while (top3.length<3) {
+    let value = scores.pop();
+    if (!top3.includes(value)) {
+        top3.push(value);
+    }
+    count++;
+
+  }
+  console.log(count);
+
+
+
+  </script>
+
+</body>
+</html>

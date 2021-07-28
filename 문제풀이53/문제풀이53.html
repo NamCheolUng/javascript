@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //괄호 문자열
+
+    function mathBrackets(arr){
+      let count = 0
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i]==='(') {
+          count++;
+        }
+        if (arr[i]===')') {
+          count--;
+      }
+    }
+    if (count != 0) {
+      return false;
+
+    }
+    let brackt = [];
+  for (let variable in arr) {
+    if (arr[i] === '(') {
+      brackt.push('(');
+
+    }
+    if (arr[i] === ')') {
+      if(brackt.length === 0){
+        return false;
+      }
+      brackt.pop();
+
+    }
+      return true;
+  }
+}
+const n = '((()))'.split('');
+console.log(n);
+console.log(mathBrackets(n));
+
+
+  </script>
+
+</body>
+</html>

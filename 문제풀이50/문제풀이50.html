@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //버블정렬 구현하기 두 인접한 원소를 검사하여 정렬하는 방법
+
+    function bubble(arr){
+      let result = arr.slice();//전달인자 없다면 슬라이스 함수는 앞에잇는 배열을 똑같이 복사해서 새로운 배열로 만듬.
+
+      for (let i = 0; i < result.length - 1; i++) {
+        for (let j = 0; j < result.length- i -1; j++) {
+          if(result[j] > result[j + 1]){
+            let value = result[j];
+                  result[j] = result[j+1];
+                  result[j + 1] = value;
+
+          }
+        }
+
+      }
+
+       return result;
+  }
+    // const items = '9 5 1 2 6 7'.split(' ').map((n) => { //각각의 원소들을 순환해서 리턴
+    //       return parseInt(n,10);
+    // });
+    const items = '9 5 1 2 6 7'.split(' ').map(n =>  //각각의 원소들을 순환해서 리턴
+           parseInt(n,10));
+    console.log(bubble(items));
+
+
+  </script>
+
+</body>
+</html>

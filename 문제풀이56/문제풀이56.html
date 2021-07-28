@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    //객체의 함수 응용
+    const nationWidth = {
+      'Korea' : 220877,
+      'Rusia' : 17098242,
+      'China' : 9596961,
+      'France' : 543965,
+      'Japan' : 377915,
+      'England' : 242900
+
+    };
+    console.log(Object.entries(nationWidth));
+
+
+  const w =nationWidth['Korea'];
+  delete nationWidth['Korea'];
+    console.log(nationWidth);
+
+    const entry = Object.entries(nationWidth);//배열로 됨
+    console.log(entry);
+
+    const values = Object.values(nationWidth);
+    console.log(values);
+
+
+    //비교할 값 저장
+    let gap = Math.max.apply(null, values);
+    let item = [];
+
+    for (var variable in entry) {
+      if (gap > Math.abs(entry[i][1]-w)) { //최소값
+        gap = Math.abs(entry[i][1]-w);
+        item = entry[i];
+      }
+    }
+    console.log(item[0], item[1]-w);
+
+
+  </script>
+
+</body>
+</html>

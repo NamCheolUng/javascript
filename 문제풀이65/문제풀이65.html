@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    //변형된 리스트
+    let a = [1,2,3,4];
+    let b = ['a','b','c','d'];
+
+    let c = a.map(function(e,i){  //e는 요소값 , i는 인덱스 값
+      if (i%2==0) {
+        return [e,b[i]];
+      }else {
+        return [b[i],e];
+
+      }
+
+    });
+    console.log(c);
+
+
+    // let a = [1,2,3,4];
+    // let b = ['a','b','c','d'];
+    // let c = [];
+    //
+    // a.forEach(function(e,i){
+    //   if (i%2==0) {
+    //      c.push([e,b[i]]);
+    //   }else {
+    //     c.push([b[i],e]);
+    //
+    //   }
+    // });
+    //   console.log(c);
+
+
+  </script>
+
+</body>
+</html>
