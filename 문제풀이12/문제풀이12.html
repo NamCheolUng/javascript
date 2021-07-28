@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //게임 캐릭터 클래스 만들기
+    class Wizard{
+
+      constructor(health, mana, armor){ //객체초기화역할, 생성자 함수, this.속성명 = 매개변수 = 속성값
+        // this = {};  (빈 객체가 암시적으로 만들어짐)
+        this.health = health; //this 분명하게 선언, 같은 클래스의 생성자를 호출할때 쓰는 키워드
+        this.mana = mana;
+        this.armor = armor;
+        // return this;  (this가 암시적으로 반환됨)
+      }
+      attack(){
+        console.log('파이어볼');
+      }
+
+    }
+
+    // function Wizard(health, mana, armor){
+    //   this.health = health;
+    //      this.mana = mana;
+    //       this.armor = armor
+    //
+    //
+    // }
+
+
+    const x = new Wizard(545, 210, 10);
+    console.log(x.health, x.mana, x.armor);
+    x.attack();
+
+  </script>
+
+</body>
+</html>

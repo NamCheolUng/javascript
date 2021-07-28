@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // 연습문제1
+    // 다음 str에 평균값을 구하세요 : '5,4,10,2,5'
+
+    let s = '5,4,10,2,5';
+     let splistS = s.split(',');// ,  단위로 짜름
+
+    console.log(splistS);
+    let sum = 0;
+    for (var variable of splistS) {
+       console.log(parseInt(variable));
+      sum += parseInt(variable, 10); //num += 1; == num = num + 1;
+    }
+    // console.log(parseInt(variable));
+
+    console.log(sum/splistS.length);
+
+
+  </script>
+
+</body>
+</html>
