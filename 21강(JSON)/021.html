@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // JSON -> JSON은 자바스크립트의 객체 표기법을 제한하여 만든 텍스트 기반의 데이터 교환 표준입니다.
+      // HTML -> 마크업언어
+      // CSS
+      // Javascript -> 프로그래밍 언어
+      // XML
+      // JSON
+      // [{
+      //   '이름' : '하나호텔',
+      //   '위치' : '제주도 제주시 001',
+      //   '가격' : {'A':50000, 'B':30000, 'C':15000},
+      //   '방의개수' : 50,
+      //   '예약자수' : 25,
+      //   '남은방의개수' : function(){return this.방의개수 - this.예약자수}//this객체에 방의개수 , this는 함수안에서 사용
+      // },{
+      //   '이름' : '둘호텔',
+      //   '위치' : '제주도 제주시 002',
+      //   '가격' : {'A':100000, 'B':60000, 'C':30000},
+      //   '방의개수' : 100,
+      //   '예약자수' : 30,
+      //   '남은방의개수' : function(){return this.방의개수 - this.예약자수}
+      //
+      // },{
+      //   '이름' : '셋호텔',
+      //   '위치' : '제주도 제주시 003',
+      //   '가격' : {'A':80000, 'B':50000, 'C':30000},
+      //   '방의개수' : 120,
+      //   '예약자수' : 80,
+      //   '남은방의개수' : function(){return this.방의개수 - this.예약자수}
+      //
+      // }];
+
+      let l = [10, 20, 30];
+      let a = JSON.parse(JSON.stringify(l));//a를 수정햇을때 영향을 끼치고 싶지 않을때.
+      a[0] = 1000;
+      console.log(l);
+      // JSON.parse(JSON.stringify(l))
+      // JSON.parse() // JSON.stringify() 메소드와는 반대로 인수로 전달받은 문자열을 자바스크립트 객체로 변환하여 반환합니다.
+
+      // JSON.stringify() //  인수로 전달받은 자바스크립트 객체를 문자열로 변환하여 반환합니다.
+
+    </script>
+
+</body>
+</html>

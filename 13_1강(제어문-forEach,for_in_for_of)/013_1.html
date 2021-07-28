@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // 제어문 - 반복문 - for
+    let array = [10, 20, 30, 40, 50];
+    for (var i = 0; i < array.length; i++) {
+
+    document.write(array[i], '<br>');
+  }
+
+  // forEach((item, i) => {
+  //
+  // });
+  //
+    array.forEach(e => console.log(e)); // 어떤 아이템 e
+
+    // for (var variable in object) {
+    //   if (object.hasOwnProperty(variable)) {
+    //
+    //   }
+    //}
+
+    for (var variable in array) {  // 인덱스 값이 들어감
+      document.write(array[variable], '<br>');
+
+    }
+
+
+// for (var variable of iterable) {
+//
+// }
+      for (var variable of array) { // 10, 20, 30, 40, 50 이  variable 여기에 들 // //
+        document.write(variable, '!! <br>');
+
+      }
+</script>
+
+</body>
+</html>

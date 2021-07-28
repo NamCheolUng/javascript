@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+    //제어문 - if
+
+   let x = 3;
+
+    x == 3 ?
+    document.write('if 문으로 실행되었습니다. <br>') :
+    ocument.write('else 문으로 실행되었습니다. <br>');
+
+    // let result = x == 3 ? true : false;
+    let result = x == 3 ? 100 : 200;
+    document.write(result, '<br>');
+
+    // let score = 91;
+    // let money = 1000;
+    // if (score > 90) {
+    //    document.write('참 잘햇습니다! <br>');
+    //   money += 100000;
+    // }else if (score > 80) {
+    //    document.write('잘햇습니다! <br>');
+    //   money += 10000;
+    // }else if (score > 70) {
+    //    document.write('햇습니다! <br>');
+    //   money += 1000;
+    // }
+    // else{
+    //   money = 0;
+    // }
+    let score = 69;
+    let money = 1000;
+    score > 90 ? money += 100000 :
+    score > 80 ? money += 10000 :
+    score > 70 ?  money += 100 : money = 10;
+
+    document.write(money);
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+     //Set  중복을 허용하지 않는 값을 모아놓은 특별한 컬렉션입니다. 셋에 키가 없는 값이 저장됩니다.
+      let s = new Set('abcdeeeee');
+
+       console.log(s);
+      s.add('f');
+      console.log(s);
+
+      for (var variable of s) { //순회
+        console.log(variable);
+
+      }
+
+      let ss = new Set('abcdeeeee'.split('')); //배열에 저장하여 리턴, 구분자로 값을 구분해 배열로 저장
+      //구분자를 생략하면 전체 스트링값이 0번째 인덱스 값이 된다.
+      //구분자를 ""로 한다면 문자 하나하나가 인덱스로 처리된다.
+
+
+
+      ss.delete('b');
+      console.log(ss.has('a'));
+      console.log(ss);
+      // ss.clear
+  </script>
+
+</body>
+</html>
