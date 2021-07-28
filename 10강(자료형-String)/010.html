@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //String
+
+    let txt = 'ABCDEFGHIJK';
+    let txt_two = 'mom said \'hello world\'';
+
+
+
+     document.write(`txt : ${txt} <br>`);
+     document.write(`txt.length : ${txt.length} <br>`);
+
+
+    document.write(`txt[1] : ${txt[1]} <br>`);
+    document.write(`txt_two : ${txt_two} <br>`);
+
+    document.write(`txt.indexOf : ${txt.indexOf('FGH')} <br>`);
+    document.write(`txt.search : ${txt.search("FGH")} <br>`);//제일앞에 잇는거 위치반환 5
+    document.write(`txt.lastIndexOf : ${txt.lastIndexOf("FGH")} <br>`);
+    document.write(`txt.slice(0, 3) : ${txt.slice(0, 3)} <br>`);
+
+
+    document.write(`txt.substring(0, 3) : ${txt.substring(0, 3)} <br>`);
+
+
+    document.write(`txt.substr(2, 5) : ${txt.substr(2, 5)} <br>`);//2인덱스부터 5개 출략..
+
+
+    document.write(`txt.replace('ABC', 'NCW') : ${txt.replace('ABC', 'NCW')} <br>`);
+
+
+    // document.write(`txt.replace('ABC', 'NCW') : ${txt.replace(/ABC/g, 'NCW')} <br>`); 글로벌하게 잡을때 ABCDEFGHIJKABC
+
+    document.write(`txt.toUpperCase() : ${txt.toUpperCase()} <br>`);//대문자
+
+
+    document.write(`txt.toLowerCase() : ${txt.toLowerCase()} <br>`);//소문자
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>

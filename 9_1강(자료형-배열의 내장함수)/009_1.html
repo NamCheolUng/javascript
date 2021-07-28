@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //array의 내장함수
+    let 과일 = ['사과', '수박', '복숭아', '딸기', '바나나'];
+    let 과일선물 = ['체리', '멜론'];
+    document.write(`과일 : ${과일} <br>`);
+    let 꺼낸과일 =  과일.pop();
+     document.write(`과일.pop() : ${과일.꺼낸과일} <br>`);//맨뒤 뻄
+
+    document.write(`과일 : ${과일} <br>`);
+     document.write(`과일.push(꺼낸과일) : ${과일.push(꺼낸과일)} <br>`);//맨뒤 넣음 리턴값은 과일의 갯수 5찍힘
+
+    document.write(`과일 : ${과일} <br>`);
+
+    document.write(`----------------------- <br>`);
+
+    let  문자열 = 과일.toString();
+     document.write(`과일.toString()[0] : ${문자열[0]} <br>`);
+
+    document.write(`과일.join('!!*') : ${과일.join('!!*')} <br>`);
+    document.write(`과일.shift() : ${과일.shift()} <br>`);//맨앞에꺼 꺼낼때
+    document.write(`과일 : ${과일} <br>`);
+
+    document.write(`과일.unshift() : ${과일.unshift('보노')} <br>`);//맨앞에꺼 넣을때
+
+    document.write(`과일 : ${과일} <br>`);
+
+    document.write(`과일.splice(1, 0, '한라봉') : ${과일.splice(1, 0, '한라봉')} <br>`);//인덱스값, 대체할인덱스수, 대체
+    //세 번째 자리부터 한개를 지우고, 지워진 값을 반환합니다.
+   //var value = myArray.splice(2, 1);
+
+
+    document.write(`과일 : ${과일} <br>`);
+
+    document.write(`과일.slice(0, 2) : ${과일.slice(0, 2)} <br>`);//ㅉ르기 0~2 인덱스 근데 2인덱스 전까지짜름
+
+
+     document.write(`과일.concat(과일선물) : ${과일.concat(과일선물)} <br>`);//추가 할때 0,
+
+
+
+    document.write(`과일.sort() : ${과일.sort()} <br>`);
+    document.write(`과일 : ${과일} <br>`);
+
+    document.write(`과일.reverse() : ${과일.reverse()} <br>`);
+    document.write(`과일 : ${과일} <br>`);
+
+     // let a = [2, 3, 1, 6];
+
+    document.write(`['1', '11', '2', '22'].sort() : ${['1', '11', '2', '22'].sort()} <br>`);
+    document.write(`['1', '11', '2', '22'].length : ${['1', '11', '2', '22'].length} <br>`);
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>

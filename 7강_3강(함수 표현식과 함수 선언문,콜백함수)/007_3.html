@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    //함수선언문
+  // document.write(sum(10,20));
+    function sum(x, y) {
+      return x + y;
+
+    }
+    //함수 표현식
+    let sumXY = function(x, y){
+       return x + y;
+
+    };
+    let sumXYcopy = sumXY;
+    document.write('함수표현식 : ' , sumXYcopy(10,20), '<br>');//함수표현식은 표현식 뒤에 써야 접근가능
+     //let x = 10;
+     //콜백함수
+     function sum(x, y, c) {
+       c(x + y);
+       return x + y;
+       }
+
+       function documentWrite(s){
+         document.write('콜백함수', s);
+
+       }
+
+       sum(10, 20, documentWrite);// sum을 호출
+  </script>
+
+</body>
+</html>
